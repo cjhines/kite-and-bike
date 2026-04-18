@@ -117,7 +117,11 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-20 relative z-20">
             {/* Location */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover">
+            <a
+              href="https://maps.google.com/?q=Watamu,Kenya"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover block">
               <div className="w-14 h-14 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📍</span>
               </div>
@@ -127,31 +131,31 @@ export default function ContactPage() {
                 <br />
                 {t('info.location.country')}
               </p>
-            </div>
+            </a>
 
             {/* Phone */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover">
+            <a
+              href="tel:+254746171861"
+              className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover block">
               <div className="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">📱</span>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">{t('info.phone.title')}</h3>
-              <a href="tel:+254746171861" className="text-cyan-600 hover:text-cyan-700 font-medium">
-                +254 746171861
-              </a>
+              <p className="text-cyan-600 font-medium">+254 746171861</p>
               <p className="text-gray-500 text-xs mt-1">{t('info.phone.note')}</p>
-            </div>
+            </a>
 
             {/* Email */}
-            <div className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover">
+            <a
+              href="mailto:waveridertourandadventures@gmail.com"
+              className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover block">
               <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">✉️</span>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">{t('info.email.title')}</h3>
-              <a href="mailto:waveridertourandadventures@gmail.com" className="text-cyan-600 hover:text-cyan-700 font-medium">
-                waveridertourandadventures@gmail.com
-              </a>
+              <p className="text-cyan-600 font-medium">waveridertourandadventures@gmail.com</p>
               <p className="text-gray-500 text-xs mt-1">{t('info.email.note')}</p>
-            </div>
+            </a>
           </div>
         </div>
       </section>
