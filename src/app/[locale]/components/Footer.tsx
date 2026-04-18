@@ -93,7 +93,7 @@ export default function Footer() {
             <div className="flex gap-4 mb-6">
               {/* Instagram */}
               <a
-                href="https://instagram.com/kite_and_bike_"
+                href="https://www.instagram.com/kite_and_bike_watamu_kenia/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-orange-500 flex items-center justify-center hover:scale-110 transition-transform"
