@@ -117,7 +117,7 @@ export default function Footer() {
             <div className="text-gray-400 text-sm space-y-1">
               <p>📍 Watamu, Kenya</p>
               <p>📞 +254 746171861</p>
-              <p>✉️ waveridertourandadventures@gmail.com</p>
+              <p>✉️ <a href="mailto:rashid2615.rashid@gmail.com" className="text-gray-400 hover:text-white transition-colors">rashid2615.rashid@gmail.com</a></p>
             </div>
           </div>
         </div>
