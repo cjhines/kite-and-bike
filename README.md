@@ -25,5 +25,4 @@ Just push to main (the repo is already connected to Vercel)!
 
 # Rashid's priority tasks
 [ ] Change Instagram contact
-[ ] Change site name
 [ ] Configure webhook with Telegram to send "email"/messages submitted on the site
