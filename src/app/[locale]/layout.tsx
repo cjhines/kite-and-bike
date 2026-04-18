@@ -4,6 +4,7 @@ import './globals.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
@@ -46,6 +47,8 @@ export default async function RootLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
+  setRequestLocale(locale);
 
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
