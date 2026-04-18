@@ -153,7 +153,7 @@ export default function ContactPage() {
                 <span className="text-2xl">✉️</span>
               </div>
               <h3 className="font-bold text-gray-800 mb-2">{t('info.email.title')}</h3>
-              <p className="text-cyan-600 font-medium">waveridertourandadventures@gmail.com</p>
+              <p className="text-gray-500 font-medium">Click here</p>
               <p className="text-gray-500 text-xs mt-1">{t('info.email.note')}</p>
             </a>
           </div>
