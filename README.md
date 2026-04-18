@@ -1,5 +1,5 @@
 # Get started
-> pnpm dev
+> npm run dev
 
 # TODOs
 [ ] Bug with hero background image on the home page
