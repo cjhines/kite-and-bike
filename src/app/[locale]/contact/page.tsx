@@ -147,7 +147,7 @@ export default function ContactPage() {
 
             {/* Email */}
             <a
-              href="mailto:waveridertourandadventures@gmail.com"
+              href="mailto:rashid2615.rashid@gmail.com"
               className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover block">
               <div className="w-14 h-14 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">✉️</span>
