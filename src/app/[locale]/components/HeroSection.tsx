@@ -7,6 +7,7 @@ interface HeroSectionProps {
   backgroundImage: string;
   ctaText?: string;
   ctaLink?: string;
+  contactText?: string;
   showScrollIndicator?: boolean;
 }
 
@@ -16,6 +17,7 @@ export default function HeroSection({
   backgroundImage,
   ctaText = 'Scopri le Avventure',
   ctaLink = '/activities',
+  contactText = 'Contattaci',
   showScrollIndicator = true,
 }: HeroSectionProps) {
   return (
@@ -37,7 +39,7 @@ export default function HeroSection({
               {ctaText} 🚀
             </Link>
             <Link href="/contact" className="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition-all">
-              Contattaci 📞
+              {contactText} 📞
             </Link>
           </div>
         </div>

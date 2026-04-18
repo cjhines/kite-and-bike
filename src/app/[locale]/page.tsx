@@ -87,6 +87,7 @@ export default function Home() {
         backgroundImage="/fromRashid/waveRider.jpeg"
         ctaText={t('hero.cta')}
         ctaLink="/activities"
+        contactText={t('hero.contact')}
       />
 
       {/* Services Categories */}
