@@ -7,6 +7,10 @@ import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
 import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
