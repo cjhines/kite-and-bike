@@ -4,7 +4,6 @@
 # TODOs
 [ ] Bug with hero background image on the home page
 [ ] Automatic currency conversions (€ / $ / Ksh)
-[o] Site translations in multiple languages -> set en or it based on browser locale (if neither -> en)
 [ ] Bookings from the site?
 [ ] Social contacts
 [ ] Feedback on the site
