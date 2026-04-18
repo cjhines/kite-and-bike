@@ -4,7 +4,6 @@
 # TODOs
 [ ] Bug with hero background image on the home page
 [ ] Automatic currency conversions (€ / $ / Ksh)
-[ ] Bookings from the site?
 [ ] Social contacts
 [ ] Feedback on the site
 [ ] Filters: age? and experience?
@@ -23,5 +22,4 @@ Just push to main (the repo is already connected to Vercel)!
 
 
 # Rashid's priority tasks
-[ ] Change Instagram contact
 [ ] Configure webhook with Telegram to send "email"/messages submitted on the site
