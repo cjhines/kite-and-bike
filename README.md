@@ -1,30 +1,29 @@
-# Rashid's website from Fausto
 # Get started
 > pnpm dev
 
 # TODOs
-[ ] bug con immagine hero di sfondo della home
-[ ] conversioni valute automatiche (€ / $ / Ksh)
-[o] traduzioni sito in più lingue -> sulla base del locale del browser imposta en o it (se non è nessuno dei due -> en)
-[ ] prenotazioni dal sito?
-[ ] contatti social
-[ ] feedback sul sito
-[ ] filtri: età? e esperienza?
-[ ] pacchetti esperienze combinate custom
-[ ] gestire bene le foto (quando ci passi col mouse di ingrandiscono)
-[ ] analytics e cookies
-[ ] controllare che non ci siano problemi di copyright con le foto e i materiali
-[ ] testare la responsiveness su mobile
-[ ] UI figa con immagini delle attività in un cerchio e poi passando il mouse cambia una card accanto con le immagini e descrizioni
-[ ] animazioni?
+[ ] Bug with hero background image on the home page
+[ ] Automatic currency conversions (€ / $ / Ksh)
+[o] Site translations in multiple languages -> set en or it based on browser locale (if neither -> en)
+[ ] Bookings from the site?
+[ ] Social contacts
+[ ] Feedback on the site
+[ ] Filters: age? and experience?
+[ ] Custom combined experience packages
+[ ] Handle photos properly (zoom on hover)
+[ ] Analytics and cookies
+[ ] Check there are no copyright issues with photos and materials
+[ ] Test responsiveness on mobile
+[ ] Fancy UI with activity images in a circle, hovering changes a card alongside with images and descriptions
+[ ] Animations?
 
-[x] deployment con Vercel
+[x] Deployment with Vercel
 
-# Processo deployment
-Basta pushare su main (è già connessa la repo con Vercel)!
+# Deployment process
+Just push to main (the repo is already connected to Vercel)!
 
 
-# Da fare come priorità di Rashid
-[ ] cambiare contatto ig
-[ ] cambiare nome sito
-[ ] configurare webhook con telegram per inviare messaggi "le email"/messaggi presenti nel sito
+# Rashid's priority tasks
+[ ] Change Instagram contact
+[ ] Change site name
+[ ] Configure webhook with Telegram to send "email"/messages submitted on the site
