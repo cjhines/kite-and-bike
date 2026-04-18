@@ -1,0 +1,255 @@
+####################
+# Java / Spring Boot
+####################
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+!.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+# Spring Boot
+spring-boot-*.log
+
+# Application config
+# Note: application-local.yml is now committed (contains only placeholders)
+# Actual values come from .env file
+**/application-local.yaml
+**/application-local.properties
+
+# API documentation
+**/api-docs/
+**/swagger-ui/
+
+####################
+# Next.js / Frontend
+####################
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js
+.next/
+out/
+
+# Production
+dist/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Vercel
+.vercel
+
+# Turbopack
+.turbo
+
+####################
+# IDE
+####################
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+####################
+# Docker & Container
+####################
+
+# Docker volumes and runtime
+.docker/
+**/volumes/
+
+####################
+# Kubernetes
+####################
+
+# Local K8s configs
+**/k8s/local/
+**/k8s/secrets/
+**/k8s/*-secret.yaml
+**/k8s/*-secret.yml
+
+# Helm
+.helm/
+**/charts/*.tgz
+
+# Kustomize
+**/kustomize/overlays/local/
+
+####################
+# AWS
+####################
+
+# AWS credentials and config
+.aws/
+**/aws-config/
+
+# CDK
+.cdk.staging/
+cdk.out/
+cdk.context.json
+
+# SAM
+.aws-sam/
+samconfig.toml
+
+# Terraform (if used)
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+
+# LocalStack
+.localstack/
+localstack-data/
+
+####################
+# Environment & Secrets
+####################
+
+# Environment files
+.env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Secrets and certificates
+*.key
+*.pem
+*.p12
+*.pfx
+*.crt
+*.cert
+*.cer
+*.der
+*.jks
+*.keystore
+*.truststore
+secrets/
+*.asc
+
+####################
+# Logs
+####################
+
+*.log
+logs/
+*.out
+*.err
+hs_err_pid*
+replay_pid*
+
+####################
+# OS
+####################
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+####################
+# Temporary & Backup
+####################
+
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+*.temp
+.cache/
+
+####################
+# Databases
+####################
+
+*.db
+*.sqlite
+*.sqlite3
+*.db-shm
+*.db-wal
+
+WARP.md
+
+
+*/app/generated/prisma

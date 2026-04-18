@@ -1,0 +1,32 @@
+export const getFeaturedActivities = (t: any) => [
+  {
+    id: 'kite-lesson',
+    title: t('activities.kite.title'),
+    description: t('activities.kite.description'),
+    price: t('activities.kite.price'),
+    duration: t('activities.kite.duration'),
+    image: '/fromRashid/WhatsApp Image 2025-12-24 at 13.28.35.jpeg',
+    emoji: '🪁',
+    features: [t('activities.kite.features.0'), t('activities.kite.features.1'), t('activities.kite.features.2')],
+  },
+  {
+    id: 'safari-blue',
+    title: t('activities.safari.title'),
+    description: t('activities.safari.description'),
+    price: '$160',
+    duration: t('activities.safari.duration'),
+    image: '/fromRashid/WhatsApp Image 2025-12-24 at 13.29.32.jpeg',
+    emoji: '💙',
+    features: [t('activities.safari.features.0'), t('activities.safari.features.1'), t('activities.safari.features.2')],
+  },
+  {
+    id: 'marafa',
+    title: t('activities.marafa.title'),
+    description: t('activities.marafa.description'),
+    price: '$130',
+    duration: t('activities.marafa.duration'),
+    image: '/fromRashid/IMG-20251201-WA0068.jpg',
+    emoji: '🌄',
+    features: [t('activities.marafa.features.0'), t('activities.marafa.features.1'), t('activities.marafa.features.2')],
+  },
+];

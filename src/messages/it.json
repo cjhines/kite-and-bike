@@ -1,0 +1,443 @@
+{
+  "Common": {
+    "language": "Lingua",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "bookNow": "Prenota Ora",
+    "learnMore": "Scopri di più",
+    "viewAll": "Vedi Tutto",
+    "close": "Chiudi"
+  },
+  "Header": {
+    "home": "Home",
+    "activities": "Attività",
+    "tours": "Tours",
+    "contact": "Contatti",
+    "bookNow": "Prenota Ora"
+  },
+  "Footer": {
+    "quickLinks": "Link Rapidi",
+    "popularActivities": "Attività Popolari",
+    "followUs": "Seguici",
+    "description": "La tua destinazione principale per esperienze indimenticabili a Watamu, Kenya! Cavalca le onde dell'avventura con noi! 🌴",
+    "kiteLessons": "Kite Lessons",
+    "paddleBoard": "Paddle Board",
+    "safariBlue": "Safari Blue",
+    "hellsKitchen": "Hell's Kitchen",
+    "rights": "Tutti i diritti riservati"
+  },
+  "Home": {
+    "hero": {
+      "title": "KITE & BIKE TOURS AND ADVENTURE",
+      "subtitle": "La tua destinazione principale per esperienze indimenticabili a Watamu, Kenya! 🌴 Preparati a tuffarti nell'avventura definitiva!",
+      "cta": "Esplora le Avventure"
+    },
+    "services": {
+      "title": "Cosa Offriamo 🌟",
+      "subtitle": "Dalle emozionanti lezioni di kite ai tour culturali, abbiamo tutto per rendere la tua vacanza indimenticabile!",
+      "categories": {
+        "water": {
+          "title": "Attività Acquatiche",
+          "description": "Kite, paddle board e tanto altro"
+        },
+        "tours": {
+          "title": "Tours & Escursioni",
+          "description": "Scopri i tesori del Kenya"
+        },
+        "rentals": {
+          "title": "Noleggio",
+          "description": "Moto, kite e attrezzature"
+        },
+        "photo": {
+          "title": "Fotografia",
+          "description": "Cattura i tuoi momenti"
+        },
+        "safaris": {
+          "title": "Safari",
+          "description": "Immergiti nella magica fauna del Kenya"
+        }
+      },
+      "discoverMore": "Scopri di più"
+    },
+    "featured": {
+      "title": "Esperienze in Evidenza ✨",
+      "subtitle": "Le nostre avventure più popolari, scelte dai nostri ospiti!",
+      "viewAll": "Vedi Tutte le Attività 🎯"
+    },
+    "stats": {
+      "happyClients": "Clienti Soddisfatti",
+      "toursCompleted": "Tours Completati",
+      "yearsExperience": "Anni di Esperienza",
+      "support": "Supporto"
+    },
+    "gallery": {
+      "title": "Momenti Indimenticabili 📸",
+      "subtitle": "Alcuni scatti delle nostre avventure a Watamu"
+    },
+    "whyUs": {
+      "title": "Perché Scegliere KITE & BIKE? 🌴",
+      "reasons": {
+        "experience": {
+          "title": "Esperienza Locale",
+          "description": "Guide locali con anni di esperienza e profonda conoscenza del territorio."
+        },
+        "safety": {
+          "title": "Sicurezza Prima di Tutto",
+          "description": "Attrezzature certificate e protocolli di sicurezza rigorosi."
+        },
+        "pricing": {
+          "title": "Prezzi Trasparenti",
+          "description": "Nessun costo nascosto, tutto incluso nel prezzo indicato."
+        },
+        "service": {
+          "title": "Servizio Personalizzato",
+          "description": "Ogni esperienza è adattata alle tue esigenze e al tuo livello."
+        }
+      },
+      "rating": "Rating Clienti"
+    },
+    "cta": {
+      "title": "Pronto per l'Avventura?",
+      "subtitle": "Contattaci oggi e inizia a pianificare la tua esperienza indimenticabile a Watamu!",
+      "bookNow": "Prenota Ora 🚀"
+    },
+    "activities": {
+      "kite": {
+        "title": "Lezioni di Kite",
+        "description": "Domina il vento con i nostri istruttori professionisti. Perfetto per tutti i livelli, dai principianti ai rider avanzati!",
+        "price": "Da €70",
+        "duration": "1-8 ore",
+        "features": ["Tutti i livelli", "Istruttori certificati", "Attrezzatura inclusa"]
+      },
+      "safari": {
+        "title": "Safari Blue Experience",
+        "description": "Avventura di un giorno intero su una barca con fondo di vetro con snorkeling, giro tra le isole, pranzo di pesce e avvistamento delfini!",
+        "price": "$160",
+        "duration": "Giornata intera",
+        "features": ["Snorkeling", "Pranzo incluso", "Avvistamento delfini"]
+      },
+      "marafa": {
+        "title": "Tour della Cucina dell'Inferno",
+        "description": "Visita le straordinarie formazioni di arenaria di Marafa e ammira spettacolari tramonti!",
+        "price": "$130",
+        "duration": "~4 ore",
+        "features": ["Trasporto incluso", "Guida locale", "Vista tramonto"]
+      }
+    }
+  },
+  "BookingModal": {
+    "title": "Prenota Ora",
+    "form": {
+      "fullName": "Nome Completo",
+      "email": "Email",
+      "phone": "Telefono / WhatsApp",
+      "preferredDate": "Data Preferita",
+      "participants": "Partecipanti",
+      "person": "persona",
+      "people": "persone",
+      "additionalNotes": "Note aggiuntive",
+      "notesPlaceholder": "Richieste speciali, livello di esperienza, ecc.",
+      "submit": "Invia Richiesta 🚀",
+      "submitting": "Invio in corso...",
+      "disclaimer": "Ti contatteremo via WhatsApp o email per confermare disponibilità e dettagli."
+    },
+    "success": {
+      "title": "Richiesta Inviata! 🎉",
+      "message": "Ti contatteremo presto per confermare la tua prenotazione."
+    }
+  },
+  "Activities": {
+    "hero": {
+      "title": "Attività & Noleggi",
+      "subtitle": "Dalle emozionanti lezioni di kite ai rilassanti tour in paddle board, scegli la tua prossima avventura!"
+    },
+    "tabs": {
+      "all": "Tutto",
+      "kite": "Kite Lessons",
+      "rentals": "Noleggi",
+      "photos": "Foto",
+      "safari": "Safari"
+    },
+    "bookNow": "Prenota",
+    "durations": {
+      "hours": "ore",
+      "hour": "ora",
+      "fullDay": "Full day",
+      "day": "giorno",
+      "month": "mese",
+      "weeks": "settimane",
+      "days": "giorni"
+    },
+    "prices": {
+      "perDay": "/giorno"
+    },
+    "kite": {
+      "title": "Kite Lessons",
+      "subtitle": "Master the wind with our professional instructors! Impara il kitesurf con i migliori istruttori di Watamu. Tutti i livelli benvenuti!",
+      "title8h": "Kite Lesson - 8 Ore",
+      "desc8h": "Il corso completo per diventare un kitesurfer autonomo! Include teoria, body drag, water start e le prime planate.",
+      "title6h": "Kite Lesson - 6 Ore",
+      "desc6h": "Corso intermedio perfetto per chi vuole consolidare le basi e migliorare la tecnica.",
+      "title3h": "Kite Lesson - 3 Ore",
+      "desc3h": "Introduzione al mondo del kite. Impara le basi della sicurezza e del controllo del kite.",
+      "title1h": "Kite Lesson - 1 Ora",
+      "desc1h": "Sessione singola per refresh o perfezionamento di tecniche specifiche."
+    },
+    "rentals": {
+      "title": "Noleggi",
+      "subtitle": "Kite, paddle board e motorbike per esplorare Watamu in totale libertà!",
+      "kiteRental1h": "Kite Rental - 1 Ora",
+      "kiteRentalDesc1h": "Noleggio attrezzatura kite completa per rider esperti. Kite, barra e tavola inclusi.",
+      "kiteRentalDay": "Kite Rental - Full Day",
+      "kiteRentalDescDay": "Giornata intera di kite! Approfitta di condizioni diverse durante la giornata.",
+      "paddle1h": "Paddle Board - 1 Ora",
+      "paddleDesc1h": "Esplora le acque calme di Watamu in paddle board. Perfetto per rilassarsi!",
+      "paddleTour": "Paddle Board - Creek Tour",
+      "paddleDescTour": "Tour guidato nel creek di Watamu. Scopri la natura e le mangrovie dal paddle board.",
+      "motoMonth": "Motorbike - 1 Mese",
+      "motoDescMonth": "Massima libertà di esplorare la costa keniota. Il modo migliore per muoversi!",
+      "moto2Weeks": "Motorbike - 2 Settimane",
+      "motoDesc2Weeks": "Due settimane di esplorazione con la tua moto personale.",
+      "motoWeek": "Motorbike - 1 Settimana o meno",
+      "motoDescWeek": "Noleggio breve per escursioni giornaliere o settimane di avventura."
+    },
+    "photos": {
+      "title": "Kite Photography",
+      "subtitle": "Capture the action! Foto professionali delle tue sessioni di kite per ricordi indimenticabili.",
+      "package5": "Kite Photo Package - 5 Foto",
+      "desc5": "Cattura i tuoi momenti migliori sul kite! 5 foto professionali ad alta risoluzione.",
+      "package10": "Kite Photo Package - 10 Foto",
+      "desc10": "Il pacchetto completo! 10 foto professionali per immortalare la tua sessione."
+    },
+    "safari": {
+      "title": "Escursioni Safari",
+      "subtitle": "Vivi la magia della fauna selvatica del Kenya con pacchetti safari accuratamente progettati per ogni tipo di viaggiatore — dalle fughe brevi alle avventure di lusso uniche nella vita. In KITE & BIKE TOURS AND ADVENTURE uniamo esperienze autentiche, guide professionali e un eccellente rapporto qualità-prezzo per regalarti ricordi indimenticabili.",
+      "package1": "Safari di 1 giorno vicino a Nairobi",
+      "desc1": "Ideale per i viaggiatori con poco tempo a disposizione. Goditi un’intera giornata di avvistamenti della fauna selvatica con: trasporto confortevole, guida safari professionale, biglietti d’ingresso al parco ed emozionanti game drive nei pressi di Nairobi.",
+      "package2": "Safari condiviso di 2–3 giorni (Tour di gruppo)",
+      "desc2": "Un’opzione dal grande valore per esplorare i parchi iconici del Kenya condividendo i costi con altri viaggiatori. Veicolo safari condiviso, lodge o campi economici, più game drive, pasti e biglietti d’ingresso ai parchi inclusi.",
+      "package3": "Safari di più giorni – Vera esperienza safari",
+      "desc3": "Perfetto per i viaggiatori avventurosi che desiderano grandi esperienze a costi contenuti. Veicolo condiviso, lodge o campi essenziali ma puliti, game drive guidati, eccellenti avvistamenti della fauna selvatica.",
+      "package4": "Safari di fascia media",
+      "desc4": "La nostra opzione più popolare — comfort, valore e momenti indimenticabili. Lodge e campi tendati ben recensiti, tutti i trasporti, pasti e biglietti dei parchi inclusi, autisti-guide esperti, più tempo all’interno dei parchi.",
+      "package5": "Safari di lusso",
+      "desc5": "Per i viaggiatori in cerca di esclusività ed eleganza. Lodge di alto livello e campi tendati di lusso, veicoli e guide safari privati, voli interni opzionali, esperienza personalizzata e senza stress.",
+      "package6": "Safari estesi e premium",
+      "desc6": "Esplora più parchi e attrazioni culturali con ritmi rilassati. Itinerari personalizzati e sistemazioni di altissimo livello."
+    },
+    "features": {
+      "banner": "Hai domande sui nostri servizi? Contattaci su WhatsApp per info e disponibilità!",
+      "complete": "Corso completo",
+      "intermediate": "Livello intermedio",
+      "beginners": "Principianti",
+      "refresh": "Refresh",
+      "allLevels": "Tutti i livelli",
+      "certified": "Istruttori certificati",
+      "equipment": "Attrezzatura inclusa",
+      "bodyDrag": "Body drag avanzato",
+      "waterStart": "Water start",
+      "theory": "Teoria + Pratica",
+      "first": "Prima esperienza",
+      "specific": "Tecnica specifica",
+      "iko": "Certificazione IKO",
+      "experienced": "Rider esperti",
+      "spot": "Spot consigliato",
+      "change": "Cambio kite incluso",
+      "allDay": "Tutto il giorno",
+      "calm": "Acque calme",
+      "relax": "Relax totale",
+      "guided": "Tour guidato",
+      "mangroves": "Mangrovie",
+      "wildlife": "Wildlife",
+      "helmet": "Casco incluso",
+      "freedom": "Libertà totale",
+      "bestPrice": "Miglior prezzo",
+      "flexibility": "Flessibilità",
+      "goodValue": "Ottimo rapporto",
+      "delivery": "Consegna flessibile",
+      "highRes": "Alta risoluzione",
+      "editing": "Editing professionale",
+      "digital": "Consegna digitale",
+      "selection": "Selezione migliori"
+    }
+  },
+  "Tours": {
+    "hero": {
+      "title": "Tours & Escursioni",
+      "subtitle": "Scopri i tesori nascosti del Kenya con le nostre esperienze uniche!"
+    },
+    "viewDetails": "Vedi Dettagli",
+    "bookNow": "Prenota",
+    "includes": "Include",
+    "highlights": "Highlights",
+    "specialOffer": {
+      "title": "🔥 Pacchetto Combo Speciale!",
+      "description": "Prenota 2 o più tour insieme e ricevi uno sconto esclusivo! Contattaci per maggiori info.",
+      "button": "Chiedi Info 📩"
+    },
+    "whyChoose": {
+      "title": "Perché Scegliere i Nostri Tours? 🌟",
+      "reasons": [
+        {
+          "title": "Guide Locali Esperte",
+          "description": "Le nostre guide conoscono ogni angolo del territorio e condividono storie autentiche."
+        },
+        {
+          "title": "Trasporto Incluso",
+          "description": "Tutti i tour includono il trasporto da e per Watamu. Nessun pensiero!"
+        },
+        {
+          "title": "Prenotazione Facile",
+          "description": "Prenota via WhatsApp o dal sito. Conferma rapida e pagamento flessibile."
+        }
+      ]
+    },
+    "marafa": {
+      "title": "Hell's Kitchen (Marafa)",
+      "description": "Visita le straordinarie formazioni di arenaria di Marafa e ammira spettacolari tramonti! Una meraviglia naturale a breve distanza da Watamu, con formazioni geologiche uniche plasmate nel corso di milioni di anni.",
+      "longDescription": "Preparati per un'avventura indimenticabile a Marafa, nota anche come Hell's Kitchen! Le nostre guide esperte ti porteranno in un emozionante viaggio verso questa meraviglia naturale. Cammina tra le straordinarie formazioni rocciose, esplora le formazioni geologiche uniche e scopri la storia e la cultura della zona."
+    },
+    "safariBlue": {
+      "title": "Safari Blue Experience",
+      "description": "Avventura di un giorno intero su una barca con fondo di vetro con snorkeling, giro tra le isole, pranzo di pesce e avvistamento delfini! L'esperienza marina definitiva a Watamu.",
+      "longDescription": "Immergiti nell'avventura definitiva! Una giornata intera in barca con fondo in vetro per ammirare la vita marina, snorkeling in acque cristalline, island hopping tra le isole paradisiache e pranzo a base di pesce fresco. Non perderti il dolphin watching!"
+    },
+    "gede": {
+      "title": "Gede Ruins Tour",
+      "description": "Scopri l'antica storia Swahili in un tour guidato nella foresta. Esplora le misteriose rovine di una città Swahili del XII secolo nascosta nella foresta.",
+      "longDescription": "Un viaggio nel tempo! Scopri le misteriose rovine di Gede, un'antica città Swahili del XII secolo abbandonata e oggi patrimonio storico. La nostra guida esperta ti racconterà la storia affascinante di questo luogo unico."
+    },
+    "sardinia2": {
+      "title": "Sardinia 2 Island",
+      "description": "Gita di mezza giornata alla bellissima isola di Sardinia 2 con snorkeling, frutta e bevande. Una fuga perfetta mattutina o pomeridiana!",
+      "longDescription": "Mezza giornata di paradiso! Raggiungi l'isola di Sardinia 2 per goderti acque cristalline, snorkeling tra pesci colorati, frutta fresca e bevande rinfrescanti. Il modo perfetto per rilassarsi!"
+    },
+    "loveIsland": {
+      "title": "Love Island",
+      "description": "Una fuga romantica a Love Island con gita in barca, frutta e bevande. Perfetto per coppie o per una giornata rilassante!",
+      "longDescription": "L'isola dell'amore ti aspetta! Un'esperienza romantica e rilassante con gita in barca, frutta fresca e bevande. Ideale per coppie o per chi cerca un momento di tranquillità assoluta."
+    },
+    "sunset": {
+      "title": "Sunset Viewing Experience",
+      "description": "Guarda il magico tramonto dal Crab Shack con gita in canoa attraverso le mangrovie, drink e deliziosi samosa di granchio!",
+      "longDescription": "Il tramonto più bello del Kenya! Gita in canoa attraverso le mangrovie fino al Crab Shack per goderti un cocktail, birra e deliziosi samosa di granchio mentre il sole scende sull'oceano."
+    },
+    "culture": {
+      "title": "African Culture Experience",
+      "description": "Immergiti nell'autentica cultura africana! Visita i villaggi locali, impara le tradizioni e vivi il vero Kenya.",
+      "longDescription": "Un'immersione autentica nella cultura africana! Visita i villaggi locali, scopri le tradizioni ancestrali, incontra la gente del posto e vivi il vero Kenya lontano dai circuiti turistici."
+    }
+  },
+  "Contact": {
+    "hero": {
+      "title": "Contattaci",
+      "subtitle": "Siamo qui per aiutarti a pianificare la tua avventura perfetta!"
+    },
+    "social": {
+      "title": "Seguici sui Social 📱",
+      "subtitle": "Resta aggiornato sulle nostre avventure e offerte speciali!",
+      "whatsapp": {
+        "description": "Scrivici su WhatsApp per info e prenotazioni"
+      },
+      "instagram": {
+        "description": "Seguici per foto e video delle avventure"
+      },
+      "facebook": {
+        "description": "La nostra pagina Facebook"
+      },
+      "tiktok": {
+        "description": "Video virali delle nostre avventure"
+      }
+    },
+    "info": {
+      "location": {
+        "title": "Dove Siamo",
+        "address": "Watamu Beach, Kilifi County",
+        "country": "Kenya, East Africa"
+      },
+      "phone": {
+        "title": "Telefono",
+        "note": "Anche WhatsApp!"
+      },
+      "email": {
+        "title": "Email",
+        "note": "Risposta in 24h"
+      },
+      "mapTitle": "Vieni a Trovarci 📍",
+      "hours": {
+        "title": "Orari di Apertura",
+        "days": "Lunedì - Domenica",
+        "time": "07:00 - 18:00",
+        "bookings": "Prenotazioni",
+        "bookingsTime": "24/7 via WhatsApp",
+        "note": "* Orari attività variano in base a condizioni meteo e maree"
+      },
+      "whatsappButton": "Contattaci su WhatsApp"
+    },
+    "form": {
+      "title": "Inviaci un Messaggio 💬",
+      "name": {
+        "label": "Nome *",
+        "placeholder": "Il tuo nome"
+      },
+      "email": {
+        "label": "Email *",
+        "placeholder": "tu@email.com"
+      },
+      "phone": {
+        "label": "Telefono",
+        "placeholder": "+39 123 456 7890"
+      },
+      "subject": {
+        "label": "Oggetto *",
+        "placeholder": "Seleziona...",
+        "options": {
+          "info": "Informazioni generali",
+          "booking": "Prenotazione attività",
+          "tour": "Informazioni tour",
+          "group": "Gruppi / Eventi",
+          "other": "Altro"
+        }
+      },
+      "message": {
+        "label": "Messaggio *",
+        "placeholder": "Scrivi il tuo messaggio..."
+      },
+      "send": "Invia Messaggio 🚀",
+      "sending": "Invio in corso...",
+      "success": {
+        "title": "Messaggio Inviato! 🎉",
+        "message": "Grazie per averci contattato! Ti risponderemo il prima possibile."
+      }
+    },
+    "faq": {
+      "title": "Domande Frequenti ❓",
+      "subtitle": "Trova risposte alle domande più comuni",
+      "0": {
+        "question": "Come posso prenotare un'attività?",
+        "answer": "Puoi prenotare direttamente dal sito cliccando su 'Prenota Ora' su qualsiasi attività, oppure contattandoci via WhatsApp. Ti risponderemo entro poche ore con disponibilità e conferma."
+      },
+      "1": {
+        "question": "Quali metodi di pagamento accettate?",
+        "answer": "Accettiamo pagamento in contanti (Euro, Dollari, Scellini kenioti), M-Pesa e bonifico bancario. Per alcune attività è richiesto un acconto per confermare la prenotazione."
+      },
+      "2": {
+        "question": "Posso cancellare una prenotazione?",
+        "answer": "Sì, offriamo cancellazione gratuita fino a 24 ore prima dell'attività. Per cancellazioni last-minute, contattaci e troveremo una soluzione."
+      },
+      "3": {
+        "question": "Fornite attrezzatura per le attività?",
+        "answer": "Sì! Tutte le attività includono l'attrezzatura necessaria. Per le lezioni di kite, forniamo kite, barra, trapezio e tavola. Per snorkeling, maschera e pinne."
+      },
+      "4": {
+        "question": "Siete disponibili tutto l'anno?",
+        "answer": "Siamo operativi tutto l'anno! Le condizioni migliori per il kite sono da Giugno a Marzo. Per i tour, ogni stagione ha il suo fascino."
+      }
+    }
+  },
+  "Auth": {
+    "login": "Accedi",
+    "email": "Email",
+    "password": "Password"
+  }
+}
