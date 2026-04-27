@@ -18,7 +18,7 @@ export const getTours = (t: any) => [
     longDescription: t('safariBlue.longDescription'),
     price: '$160',
     duration: 'Giornata intera',
-    image: '/fromRashid/IMG-20250903-WA0047.jpg',
+    image: '/assets/safari-blue.jpeg',
     emoji: '💙',
     includes: [
       'Trasporto al boat center',
@@ -37,7 +37,7 @@ export const getTours = (t: any) => [
     longDescription: t('gede.longDescription'),
     price: '$30',
     duration: '~3 ore',
-    image: '/fromRashid/IMG-20251203-WA0020.jpg',
+    image: '/assets/gede-ruins.jpeg',
     emoji: '🏛️',
     includes: ['Trasporto in moto A/R', "Fee d'ingresso", 'Guida locale'],
     highlights: ['Storia Swahili', 'Rovine antiche', 'Natura', 'Cultura'],
