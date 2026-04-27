@@ -63,7 +63,7 @@ export const getTours = (t: any) => [
     price: '$25',
     priceNote: 'per persona',
     duration: '~4 ore',
-    image: '/fromRashid/IMG-20250122-WA0070.jpg',
+    image: '/assets/love-island.jpeg',
     emoji: '💕',
     includes: ['Trasporto A/R', 'Gita in barca', 'Frutta fresca', 'Acqua/Soda'],
     highlights: ['Romantico', 'Barca privata', 'Relax', 'Foto'],
