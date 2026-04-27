@@ -88,7 +88,7 @@ export const getTours = (t: any) => [
     longDescription: t('culture.longDescription'),
     price: '$20',
     duration: '~3 ore',
-    image: '/fromRashid/IMG-20251203-WA0022.jpg',
+    image: '/assets/african-culture.jpeg',
     emoji: '🌍',
     includes: ['Trasporto in moto/tuktuk A/R', 'Guida locale', 'Visita villaggi'],
     highlights: ['Cultura autentica', 'Villaggi locali', 'Tradizioni', 'Persone'],
