@@ -1,4 +1,6 @@
-export const getTours = (t: any) => [
+import type { useTranslations } from 'next-intl';
+
+export const getTours = (t: ReturnType<typeof useTranslations<'Tours'>>) => [
   {
     id: 'marafa',
     title: t('marafa.title'),

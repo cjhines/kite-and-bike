@@ -3,7 +3,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
 import BookingModal from '../components/BookingModal';
 import { getTours } from '../_data/toursData';
 
