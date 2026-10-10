@@ -145,6 +145,9 @@
     "success": {
       "title": "Richiesta Inviata! 🎉",
       "message": "Ti contatteremo presto per confermare la tua prenotazione."
+    },
+    "error": {
+      "message": "Si è verificato un errore durante l'invio della richiesta. Riprova, oppure contattaci direttamente via WhatsApp."
     }
   },
   "Activities": {

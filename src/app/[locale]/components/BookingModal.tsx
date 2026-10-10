@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
+const WORKER_URL = 'https://kite-and-bike-bookings.chrishinesabdn.workers.dev';
+
 interface BookingModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -25,30 +27,52 @@ export default function BookingModal({ isOpen, onClose, activity }: BookingModal
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!activity) return;
     setIsSubmitting(true);
+    setError(false);
 
-    // Simula invio prenotazione (in futuro può essere collegato a un backend)
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        date: '',
-        participants: '1',
-        notes: '',
+    try {
+      const res = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          date: formData.date,
+          guests: formData.participants,
+          message: formData.notes,
+          tour: activity.name,
+        }),
       });
-      onClose();
-    }, 3000);
+
+      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
+
+      setIsSubmitted(true);
+
+      // Reset after 3 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          date: '',
+          participants: '1',
+          notes: '',
+        });
+        onClose();
+      }, 3000);
+    } catch {
+      // Keep the form data so the user can retry
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -192,6 +216,12 @@ export default function BookingModal({ isOpen, onClose, activity }: BookingModal
                 placeholder={t('form.notesPlaceholder')}
               />
             </div>
+
+            {error && (
+              <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-4 py-2" role="alert">
+                {t('error.message')}
+              </p>
+            )}
 
             <button
               type="submit"
