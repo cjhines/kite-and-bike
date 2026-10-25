@@ -43,7 +43,7 @@ export default {
         `📧 *Email:* ${escapeMarkdown(email)}`,
         phone ? `📱 *Phone:* ${escapeMarkdown(phone)}` : null,
         `📅 *Date:* ${escapeMarkdown(date)}`,
-        `👥 *Guests:* ${guests || 1}`,
+        `👥 *Guests:* ${escapeMarkdown(guests || 1)}`,
         `🏄 *Tour:* ${escapeMarkdown(tour)}`,
         message ? `\n💬 *Message:*\n${escapeMarkdown(message)}` : null,
       ]
@@ -97,5 +97,5 @@ function corsHeaders(origin) {
 
 // Escape special Markdown characters for Telegram
 function escapeMarkdown(text) {
-  return String(text).replace(/([_*[\]()~`>#+\-=|{}.!])/g, "\\$1");
+  return String(text).replace(/([_*[\]()~`>#+\-=|{}.!\\])/g, "\\$1");
 }
