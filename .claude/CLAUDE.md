@@ -67,6 +67,9 @@ was also a stub until it was wired up later the same day.
 
 - Worker deployed; CORS restricted to `kiteandbike.site` / `www.` / `localhost:3000` (`ALLOWED_ORIGINS`)
 - End-to-end checked by POSTing a labelled test booking to the worker with the site's Origin → `200`
+- **Local Windows builds aren't representative for prefetching:** Next's export writes prefetch files
+  nested (`__next.$d$locale/__PAGE__.txt`) on Windows but dot-joined on Linux, and the client requests
+  the dot-joined names. So serving a Windows `out/` shows prefetch 404s that CI's Linux build doesn't have.
 
 ## Key Files
 
