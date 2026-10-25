@@ -1,4 +1,6 @@
-export const getFeaturedActivities = (t: any) => [
+import type { Translator } from '@/types';
+
+export const getFeaturedActivities = (t: Translator<'Home'>) => [
   {
     id: 'kite-lesson',
     title: t('activities.kite.title'),

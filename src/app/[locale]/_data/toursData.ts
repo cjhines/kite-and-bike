@@ -1,6 +1,6 @@
-import type { useTranslations } from 'next-intl';
+import type { Translator } from '@/types';
 
-export const getTours = (t: ReturnType<typeof useTranslations<'Tours'>>) => [
+export const getTours = (t: Translator<'Tours'>) => [
   {
     id: 'marafa',
     title: t('marafa.title'),

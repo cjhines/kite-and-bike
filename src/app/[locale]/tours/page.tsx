@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import type { BookingActivity } from '@/types';
 import BookingModal from '../components/BookingModal';
 import { getTours } from '../_data/toursData';
 
@@ -13,11 +14,7 @@ export default function ToursPage() {
   const [selectedTour, setSelectedTour] = useState<(typeof tours)[0] | null>(null);
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [bookingActivity, setBookingActivity] = useState<{
-    name: string;
-    price: string;
-    duration?: string;
-  } | null>(null);
+  const [bookingActivity, setBookingActivity] = useState<BookingActivity | null>(null);
 
   const handleViewDetails = (tour: (typeof tours)[0]) => {
     setSelectedTour(tour);

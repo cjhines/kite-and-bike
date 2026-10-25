@@ -2,16 +2,13 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import type { BookingActivity } from '@/types';
 import { sendToWorker } from '../_utils/sendToWorker';
 
 interface BookingModalProps {
   isOpen: boolean;
   onClose: () => void;
-  activity: {
-    name: string;
-    price: string;
-    duration?: string;
-  } | null;
+  activity: BookingActivity | null;
 }
 
 export default function BookingModal({ isOpen, onClose, activity }: BookingModalProps) {

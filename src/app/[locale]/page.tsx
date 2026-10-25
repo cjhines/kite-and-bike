@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import type { BookingActivity } from '@/types';
 import HeroSection from './components/HeroSection';
 import ActivityCard from './components/ActivityCard';
 import BookingModal from './components/BookingModal';
@@ -62,11 +63,7 @@ export default function Home() {
     },
   ];
 
-  const [selectedActivity, setSelectedActivity] = useState<{
-    name: string;
-    price: string;
-    duration?: string;
-  } | null>(null);
+  const [selectedActivity, setSelectedActivity] = useState<BookingActivity | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleBooking = (activity: (typeof featuredActivities)[0]) => {

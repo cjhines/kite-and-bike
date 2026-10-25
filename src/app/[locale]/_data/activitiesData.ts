@@ -1,4 +1,6 @@
-export const getKiteActivities = (t: any) => [
+import type { Translator } from '@/types';
+
+export const getKiteActivities = (t: Translator<'Activities'>) => [
   {
     id: 'kite-8h',
     title: t('kite.title8h'),
@@ -33,7 +35,7 @@ export const getKiteActivities = (t: any) => [
   },
 ];
 
-export const getRentals = (t: any) => [
+export const getRentals = (t: Translator<'Activities'>) => [
   {
     id: 'kite-rental-1h',
     title: t('rentals.kiteRental1h'),
@@ -99,7 +101,7 @@ export const getRentals = (t: any) => [
   },
 ];
 
-export const getPhotoPackages = (t: any) => [
+export const getPhotoPackages = (t: Translator<'Activities'>) => [
   {
     id: 'photos-5',
     title: t('photos.package5'),
@@ -120,7 +122,7 @@ export const getPhotoPackages = (t: any) => [
   },
 ];
 
-export const getSafaris = (t: any) => [
+export const getSafaris = (t: Translator<'Activities'>) => [
   {
     id: 'safari-1day',
     title: t('safari.package1'),

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
+import type { BookingActivity } from '@/types';
 import BookingModal from '../components/BookingModal';
 import { getKiteActivities, getRentals, getPhotoPackages, getSafaris } from '../_data/activitiesData';
 
@@ -15,11 +16,7 @@ export default function ActivitiesPage() {
   const safaris = getSafaris(t);
   const photoPackages = getPhotoPackages(t);
 
-  const [selectedActivity, setSelectedActivity] = useState<{
-    name: string;
-    price: string;
-    duration?: string;
-  } | null>(null);
+  const [selectedActivity, setSelectedActivity] = useState<BookingActivity | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [activeTab, setActiveTab] = useState('all');
 
