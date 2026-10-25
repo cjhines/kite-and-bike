@@ -194,6 +194,10 @@ localstack-data/
 secrets/
 *.asc
 
+# Cloudflare Wrangler (local state, and secrets for `wrangler dev`)
+.wrangler/
+.dev.vars*
+
 ####################
 # Logs
 ####################
