@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
 import { sendToWorker } from '../_utils/sendToWorker';
+import LocationMap, { MAPS_URL } from '../components/LocationMap';
 
 export default function ContactPage() {
   const t = useTranslations('Contact');
@@ -135,7 +136,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 -mt-20 relative z-20">
             {/* Location */}
             <a
-              href="https://maps.google.com/?q=Watamu,Kenya"
+              href={MAPS_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-2xl shadow-xl p-6 text-center card-hover block">
@@ -345,19 +346,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-6">{t('info.mapTitle')}</h2>
 
-              {/* Map Placeholder */}
-              <div className="relative h-64 md:h-80 rounded-2xl overflow-hidden mb-6 bg-gray-200">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.547875395846!2d40.01!3d-3.35!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18139c1018f0ec5d%3A0x6f7a0d7a63ef7f91!2sWatamu%2C%20Kenya!5e0!3m2!1sen!2sit!4v1702400000000!5m2!1sen!2sit"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="KITE & BIKE TOURS AND ADVENTURE Location"
-                />
-              </div>
+              <LocationMap className="h-64 md:h-80 mb-6" />
 
               {/* Opening Hours */}
               <div className="bg-gray-50 rounded-2xl p-6">
