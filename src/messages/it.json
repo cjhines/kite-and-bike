@@ -412,6 +412,9 @@
       "success": {
         "title": "Messaggio Inviato! 🎉",
         "message": "Grazie per averci contattato! Ti risponderemo il prima possibile."
+      },
+      "error": {
+        "message": "Si è verificato un errore durante l'invio del messaggio. Riprova, oppure contattaci direttamente via WhatsApp."
       }
     },
     "faq": {

@@ -24,31 +24,18 @@ export default {
     }
 
     try {
-      const { name, email, phone, date, guests, tour, message } =
-        await request.json();
+      const body = await request.json();
 
-      // Basic validation
-      if (!name || !email || !date || !tour) {
+      // Bookings come from BookingModal, contact messages from the contact page.
+      // Requests without a type are bookings, for pages cached from before the field existed.
+      const text = body.type === "contact" ? contactMessage(body) : bookingMessage(body);
+
+      if (!text) {
         return new Response(JSON.stringify({ error: "Missing required fields" }), {
           status: 400,
           headers: corsHeaders(origin),
         });
       }
-
-      // Format the Telegram message
-      const text = [
-        `🆕 *New Booking Request*`,
-        ``,
-        `👤 *Name:* ${escapeMarkdown(name)}`,
-        `📧 *Email:* ${escapeMarkdown(email)}`,
-        phone ? `📱 *Phone:* ${escapeMarkdown(phone)}` : null,
-        `📅 *Date:* ${escapeMarkdown(date)}`,
-        `👥 *Guests:* ${escapeMarkdown(guests || 1)}`,
-        `🏄 *Tour:* ${escapeMarkdown(tour)}`,
-        message ? `\n💬 *Message:*\n${escapeMarkdown(message)}` : null,
-      ]
-        .filter(Boolean)
-        .join("\n");
 
       // Send to Telegram
       const telegramResponse = await fetch(
@@ -93,6 +80,42 @@ function corsHeaders(origin) {
     "Access-Control-Allow-Origin": allowed,
     "Vary": "Origin",
   };
+}
+
+// Each message starts with its label, so Rashid can tell them apart from the notification alone.
+// Returns null when required fields are missing.
+function bookingMessage({ name, email, phone, date, guests, tour, message }) {
+  if (!name || !email || !date || !tour) return null;
+
+  return [
+    `*BOOKING REQUEST*`,
+    ``,
+    `👤 *Name:* ${escapeMarkdown(name)}`,
+    `📧 *Email:* ${escapeMarkdown(email)}`,
+    phone ? `📱 *Phone:* ${escapeMarkdown(phone)}` : null,
+    `📅 *Date:* ${escapeMarkdown(date)}`,
+    `👥 *Guests:* ${escapeMarkdown(guests || 1)}`,
+    `🏄 *Tour:* ${escapeMarkdown(tour)}`,
+    message ? `\n💬 *Message:*\n${escapeMarkdown(message)}` : null,
+  ]
+    .filter((line) => line !== null)
+    .join("\n");
+}
+
+function contactMessage({ name, email, phone, subject, message }) {
+  if (!name || !email || !message) return null;
+
+  return [
+    `*CONTACT MESSAGE*`,
+    ``,
+    `👤 *Name:* ${escapeMarkdown(name)}`,
+    `📧 *Email:* ${escapeMarkdown(email)}`,
+    phone ? `📱 *Phone:* ${escapeMarkdown(phone)}` : null,
+    subject ? `📌 *Subject:* ${escapeMarkdown(subject)}` : null,
+    `\n💬 *Message:*\n${escapeMarkdown(message)}`,
+  ]
+    .filter((line) => line !== null)
+    .join("\n");
 }
 
 // Escape special Markdown characters for Telegram

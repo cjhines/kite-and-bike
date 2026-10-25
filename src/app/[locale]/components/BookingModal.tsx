@@ -2,8 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-
-const WORKER_URL = 'https://kite-and-bike-bookings.chrishinesabdn.workers.dev';
+import { sendToWorker } from '../_utils/sendToWorker';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -36,21 +35,16 @@ export default function BookingModal({ isOpen, onClose, activity }: BookingModal
     setError(false);
 
     try {
-      const res = await fetch(WORKER_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          phone: formData.phone,
-          date: formData.date,
-          guests: formData.participants,
-          message: formData.notes,
-          tour: activity.name,
-        }),
+      await sendToWorker({
+        type: 'booking',
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        date: formData.date,
+        guests: formData.participants,
+        message: formData.notes,
+        tour: activity.name,
       });
-
-      if (!res.ok) throw new Error(`Request failed: ${res.status}`);
 
       setIsSubmitted(true);
 

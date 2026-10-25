@@ -412,6 +412,9 @@
       "success": {
         "title": "Message Sent! 🎉",
         "message": "Thank you for contacting us! We'll reply as soon as possible."
+      },
+      "error": {
+        "message": "Something went wrong sending your message. Please try again, or contact us directly via WhatsApp."
       }
     },
     "faq": {

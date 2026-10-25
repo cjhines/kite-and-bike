@@ -44,18 +44,26 @@ npx wrangler deploy
 
 The deploy gives a URL like `https://kite-and-bike-bookings.<subdomain>.workers.dev` — this goes in the `WORKER_URL` constant in the form component.
 
-## Form Component
+## Forms
 
-`src/app/[locale]/components/BookingModal.tsx` — modal opened from the home, tours and activities
-pages. The activity/tour comes from the page that opens it. It collects name, email, phone, date,
-participants and notes, and POSTs them to `WORKER_URL`. On failure it tells the customer to use
-WhatsApp instead (`BookingModal.error.message` in `src/messages/*.json`).
+Both forms POST through `sendToWorker()` (`src/app/[locale]/_utils/sendToWorker.ts`, which holds
+`WORKER_URL`) with a `type`, and the worker starts each Telegram message with its label so Rashid can
+tell them apart from the notification alone:
+
+- **`BOOKING REQUEST`** — `src/app/[locale]/components/BookingModal.tsx`, the modal opened from the
+  home, tours and activities pages. Sends name, email, phone, date, guests, tour and notes. Requests
+  with no `type` are also treated as bookings.
+- **`CONTACT MESSAGE`** — the form on `src/app/[locale]/contact/page.tsx`. Sends name, email, phone,
+  subject (the label the visitor picked, in their language) and message.
+
+On failure both tell the visitor to use WhatsApp instead (`error.message` keys in `src/messages/*.json`).
 
 ## Status
 
 Live since 2026-10-25. The worker had been deployed in July, but the form wiring sat unmerged on
 `booking-worker`, so the live form was a stub that showed "success" and sent nothing. GitHub Pages
-**only deploys `main`**, so form changes aren't live until they're merged there.
+**only deploys `main`**, so form changes aren't live until they're merged there. The contact page form
+was also a stub until it was wired up later the same day.
 
 - Worker deployed; CORS restricted to `kiteandbike.site` / `www.` / `localhost:3000` (`ALLOWED_ORIGINS`)
 - End-to-end checked by POSTing a labelled test booking to the worker with the site's Origin → `200`
@@ -65,6 +73,8 @@ Live since 2026-10-25. The worker had been deployed in July, but the form wiring
 - `worker/worker.js` — Cloudflare Worker that receives form POSTs and forwards to Telegram
 - `worker/wrangler.toml` — Cloudflare Worker config (deploy from `worker/`)
 - `src/app/[locale]/components/BookingModal.tsx` — the booking form
+- `src/app/[locale]/contact/page.tsx` — the contact form
+- `src/app/[locale]/_utils/sendToWorker.ts` — `WORKER_URL` and the POST both forms use
 
 ## Decisions & Constraints
 

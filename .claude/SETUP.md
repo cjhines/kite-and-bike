@@ -43,10 +43,11 @@ npx wrangler deploy
 
 Note the URL it gives you (e.g. `https://kite-and-bike-bookings.<you>.workers.dev`).
 
-## 3. The Form
+## 3. The Forms
 
-Already wired up: `src/app/[locale]/components/BookingModal.tsx` POSTs to `WORKER_URL`. Changes only go
-live once they're on `main` — GitHub Pages deploys nothing else.
+Already wired up: the booking modal and the contact page form both POST via
+`src/app/[locale]/_utils/sendToWorker.ts`, which holds `WORKER_URL`. Changes only go live once they're on
+`main` — GitHub Pages deploys nothing else.
 
 ## 4. CORS
 

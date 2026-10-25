@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+import { sendToWorker } from '../_utils/sendToWorker';
 
 export default function ContactPage() {
   const t = useTranslations('Contact');
@@ -15,6 +16,7 @@ export default function ContactPage() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [error, setError] = useState(false);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   const socialLinks = [
@@ -70,24 +72,38 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(false);
 
-    // Simula invio form
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-
-    // Reset after 5 seconds
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        subject: '',
-        message: '',
+    try {
+      await sendToWorker({
+        type: 'contact',
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        // Send the label the visitor picked, not the option key
+        subject: t(`form.subject.options.${formData.subject}`),
+        message: formData.message,
       });
-    }, 5000);
+
+      setIsSubmitted(true);
+
+      // Reset after 5 seconds
+      setTimeout(() => {
+        setIsSubmitted(false);
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: '',
+        });
+      }, 5000);
+    } catch {
+      // Keep the form data so the user can retry
+      setError(true);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -293,6 +309,12 @@ export default function ContactPage() {
                       placeholder={t('form.message.placeholder')}
                     />
                   </div>
+
+                  {error && (
+                    <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-xl px-4 py-3" role="alert">
+                      {t('form.error.message')}
+                    </p>
+                  )}
 
                   <button
                     type="submit"
