@@ -1,18 +1,18 @@
 import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
-import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
+import { Analytics } from '@vercel/analytics/next';
+
+import './globals.css';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import { routing } from '@/i18n/routing';
 
 export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
-
-import { Analytics } from '@vercel/analytics/next';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',

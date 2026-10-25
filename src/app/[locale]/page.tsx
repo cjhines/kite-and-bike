@@ -3,12 +3,12 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+
 import { Link } from '@/i18n/navigation';
 import type { BookingActivity } from '@/types';
 import HeroSection from './components/HeroSection';
 import ActivityCard from './components/ActivityCard';
 import BookingModal from './components/BookingModal';
-
 import { getFeaturedActivities } from './_data/featuredActivities';
 
 export default function Home() {

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+
 import type { BookingActivity } from '@/types';
 import { sendToWorker } from '../_utils/sendToWorker';
 

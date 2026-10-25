@@ -3,6 +3,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
+
 import { sendToWorker } from '../_utils/sendToWorker';
 
 export default function ContactPage() {
